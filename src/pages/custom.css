@@ -1,0 +1,12 @@
+body {
+    background-color: #000 !important;
+}
+
+.ant-anchor-link {
+    float:left;
+}
+
+#woofpaper {
+    background-image: url('../images/s1background.jpg');
+    background-size: cover;
+}
