@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useState, useEffect } from 'react';
 import PropTypes from "prop-types"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -15,6 +16,11 @@ import {
 const { Link } = Anchor;
 
 const Header = ({ siteTitle }) => {
+  const [targetOffset, setTargetOffset] = useState(undefined);
+  useEffect(() => {
+    setTargetOffset(window.innerHeight / 2);
+  }, []);
+
   return (
     <Affix>
     <header
@@ -45,11 +51,9 @@ const Header = ({ siteTitle }) => {
           <Col className="gutter-row" span={16}>
             <div>
               <Menu mode="horizontal">
-                <Anchor>
+                <Anchor targetOffset={targetOffset}>
                   <Link href="#woofpaper" title="Woofpaper" />
                   <Link href="#how-to-buy" title="How To Buy" />
-                  <Link href="#coconomics" title="Coconomics" />
-                  <Link href="#nft-charity" title="NFT Charity" />
                   <Link href="#community" title="Community" />
                 </Anchor>
               </Menu>
