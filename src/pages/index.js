@@ -46,24 +46,30 @@ const IndexPage = () => {
       <div id="woofpaper">
         <Seo title="Home" />
         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-          <Col className="gutter-row" span={12}>
-            <div>
+          <Col className="gutter-row" span={10}>
+            <div id="wgmi">
               <h1>WGMI</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum ut id placerat tortor sed. Tellus proin urna, ac justo, rhoncus enim, ultrices. Vulputate imperdiet tempus in dignissim id. Lectus bibendum scelerisque vitae urna dictumst sed at.
               </p>
-              <button>How To Buy</button>
-              <button>Read</button>
+              <Row>
+                <Col>
+                  <a class="calltoaction"><button>How To Buy</button></a>
+                </Col>
+                <Col>
+                  <a class="passiveaction"><button>Read</button></a>
+                </Col>
+              </Row>
             </div>
           </Col>
-          <Col className="gutter-row" span={12}>
+          <Col className="gutter-row" span={14}>
             <div>
               <StaticImage
                 src="../images/shibs.svg"
                 width={600}
                 quality={95}
                 formats={["auto", "webp", "avif"]}
-                alt="A Gatsby astronaut"
+                alt="Island Shib Brothers"
                 style={{ marginBottom: `1.45rem` }}
               />
             </div>
@@ -128,7 +134,7 @@ const IndexPage = () => {
                 width={600}
                 quality={95}
                 formats={["auto", "webp", "avif"]}
-                alt="A Gatsby astronaut"
+                alt="Island Shib Brothers"
                 style={{ marginBottom: `1.45rem` }}
               />
                 <Button type="primary" onClick={show1Modal}>
@@ -148,7 +154,7 @@ const IndexPage = () => {
                 width={600}
                 quality={95}
                 formats={["auto", "webp", "avif"]}
-                alt="A Gatsby astronaut"
+                alt="Island Shib Brothers"
                 style={{ marginBottom: `1.45rem` }}
               />
                 <Button type="primary" onClick={show2Modal}>
