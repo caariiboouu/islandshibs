@@ -6,11 +6,12 @@ import { StaticImage } from "gatsby-plugin-image"
 import 'antd/dist/antd.css';
 import './layout.css';
 import { 
-  Affix, 
+  Affix,
+  Button,
   Menu, 
   Anchor, 
   Row, 
-  Col, 
+  Col,
 } from 'antd';
 
 const { Link } = Anchor;
@@ -32,23 +33,22 @@ const Header = ({ siteTitle }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
+          padding: `.5rem 1.0875rem`,
         }}
       >
         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
           <Col className="gutter-row" span={4}>
             <div>
-`            <StaticImage
-              src="../images/islandshibslogo.png"
-              width={300}
-              quality={95}
-              formats={["auto", "webp", "avif"]}
-              alt="Island Shibs Logo"
-              style={{ marginBottom: `1.45rem` }}
-            />
+                <StaticImage
+                  src="../images/islandshibslogo.png"
+                  width={500}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="Island Shibs Logo"
+                />
             </div>
           </Col>
-          <Col className="gutter-row" span={16}>
+          <Col className="gutter-row" span={14}>
             <div>
               <Menu mode="horizontal">
                 <Anchor targetOffset={targetOffset}>
@@ -59,9 +59,11 @@ const Header = ({ siteTitle }) => {
               </Menu>
             </div>
           </Col>
-          <Col className="gutter-row" span={4}>
+          <Col className="gutter-row" span={6}>
             <div>
-              IDO &#11106;
+              <a class="calltoaction" href="https://thispersondoesnotexist.com/" target="_blank">
+                <Button>IDO &#11106;</Button>
+              </a>
             </div>
           </Col>
         </Row>

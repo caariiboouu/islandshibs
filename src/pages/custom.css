@@ -2,8 +2,103 @@ body {
     background-color: #000 !important;
 }
 
-h1, h2, h3, h4, h5, h6, p, label {
+@font-face {
+    font-family: 'philly_sansregular';
+    src: url('./../fonts/philly/phillysans-webfont.woff2') format('woff2'),
+         url('./../fonts/philly/phillysans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DM Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DM Sans Regular'), url('./../fonts/dm/DMSans-Regular.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'DM Sans Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DM Sans Italic'), url('./../fonts/dm/DMSans-Italic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'DM Sans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DM Sans Medium'), url('./../fonts/dm/DMSans-Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'DM Sans Medium Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DM Sans Medium Italic'), url('./../fonts/dm/DMSans-MediumItalic.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'DM Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DM Sans Bold'), url('./../fonts/dm/DMSans-Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'DM Sans Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DM Sans Bold Italic'), url('./../fonts/dm/DMSans-BoldItalic.woff') format('woff');
+    }
+
+h1, h2, h3, h4, h5, h6, p, label, a {
     color: #fff !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'philly_sansregular', Arial, sans-serif;
+}
+p, label, a {
+    font-family: 'DM Sans Medium', Arial, sans-serif;
+}
+
+header .ant-row {
+    align-items: center;
+    justify-content: center;
+}
+.calltoaction button {
+    background-color: #EA3438;
+    padding: 0.5rem 3rem 1.7rem;
+    color: #fff;
+    border-radius: 10rem;
+    border: 1px solid transparent;
+    width: 100%;
+}
+.calltoaction button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #EA3438;
+}
+
+.ant-anchor-link-active > .ant-anchor-link-title {
+    color: #fff !important;
+    font-weight: bold;
+}
+.ant-anchor-link-title {
+    color: #fff !important;
+}
+.ant-anchor-ink-ball.visible {
+    display: none !important;
+}
+
+.ant-menu {
+    background: none !important;
+    border-bottom: none !important;
 }
 
 section {
