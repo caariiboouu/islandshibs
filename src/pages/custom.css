@@ -82,6 +82,7 @@ header .calltoaction button {
 button {
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     margin: 0 0.3rem 0 0 !important;
+    box-shadow: 0.3rem 0.3rem 0.5rem #00000030;
 }
 .calltoaction button {
     background-color: #EA3438;
