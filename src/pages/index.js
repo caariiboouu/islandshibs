@@ -45,10 +45,17 @@ const IndexPage = () => {
     <section>
       <div id="woofpaper">
         <Seo title="Home" />
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-          <Col className="gutter-row" span={10}>
+        <Row>
+          <Col xs={24} sm={24} md={14} lg={12} xl={12}>
             <div id="wgmi">
-              <h1>WGMI</h1>
+              <StaticImage
+                src="../images/wgmi.svg"
+                width={350}
+                quality={100}
+                formats={["auto", "webp", "avif"]}
+                alt="WGMI"
+                style={{ marginBottom: `1rem` }}
+              />
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum ut id placerat tortor sed. Tellus proin urna, ac justo, rhoncus enim, ultrices. Vulputate imperdiet tempus in dignissim id. Lectus bibendum scelerisque vitae urna dictumst sed at.
               </p>
@@ -62,7 +69,7 @@ const IndexPage = () => {
               </Row>
             </div>
           </Col>
-          <Col className="gutter-row" span={14}>
+          <Col xs={24} sm={24} md={10} lg={12} xl={12}>
             <div>
               <StaticImage
                 src="../images/shibs.svg"
@@ -78,37 +85,146 @@ const IndexPage = () => {
       </div>
     </section>
     
-    <section>
+    <section id="info">
       <div id="contract">
         <div><h2>Contract</h2></div>
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+        <Row>
           <Col className="gutter-row" span={24}>
-            <p>CA: 1xfe6567ee89ad114833c05dd22c9597baca8aa540</p>
+            <div id="contractbox">
+              <h5><span id="contractgreen">CA:</span> 1xfe6567ee89ad114833c05dd22c9597baca8aa540</h5>
+            </div>
           </Col>
         </Row>
       </div>
-    </section>
 
-    <section>
       <div id="the-stats">
         <div><h2>The Stats</h2></div>
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-          <Col className="gutter-row" span={12}>
-            <p>1</p>
+        <Row>
+          <Col 
+            xs={24} 
+            sm={24} 
+            md={{span: 8, offset: 4}} 
+            lg={{span: 8, offset: 4}} 
+            xl={{span: 8, offset: 4}}
+          >
+            <div class="statcard">
+              <div class="statimg">
+                <StaticImage
+                  src="../images/statone.svg"
+                  width={800}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="Value Shibs"
+                  style={{ marginBottom: `1.45rem` }}
+                />
+              </div>
+              <div class="statboard">
+                <p class="statnumber">10,000.00</p>
+                <p class="statname">VALUE</p>
+              </div>
+            </div>
           </Col>
-          <Col className="gutter-row" span={12}>
-            <p>2</p>
+          <Col 
+            xs={24} 
+            sm={24} 
+            md={8} 
+            lg={8} 
+            xl={8}
+          >
+            <div class="statcard">
+              <div class="statimg">
+                <StaticImage
+                  src="../images/stattwo.svg"
+                  width={800}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="Holder Shibs"
+                  style={{ marginBottom: `1.45rem` }}
+                />
+              </div>
+              <div class="statboard">
+                <p class="statnumber">10,000.00</p>
+                <p class="statname">HOLDERS</p>
+              </div>
+            </div>
           </Col>
-          <Col className="gutter-row" span={8}>
-            <p>3</p>
+          <Col 
+            xs={24} 
+            sm={24} 
+            md={8} 
+            lg={8} 
+            xl={8}
+          >
+            <div class="statcard">
+              <div class="statimg">
+                <StaticImage
+                  src="../images/statthr.svg"
+                  width={800}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="Burnt Shibs"
+                  style={{ marginBottom: `1.45rem` }}
+                />
+              </div>
+              <div class="statboard">
+                <p class="statnumber">10,000.00</p>
+                <p class="statname">BURNED</p>
+              </div>
+            </div>
           </Col>
-          <Col className="gutter-row" span={8}>
-            <p>4</p>
+          <Col 
+            xs={24} 
+            sm={24} 
+            md={8} 
+            lg={8} 
+            xl={8}
+          >
+            <div class="statcard">
+              <div class="statimg">
+                <StaticImage
+                  src="../images/statfou.svg"
+                  width={800}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="Circular Shibs"
+                  style={{ marginBottom: `1.45rem` }}
+                />
+              </div>
+              <div class="statboard">
+                <p class="statnumber">10,000.00</p>
+                <p class="statname">CIRCULATION</p>
+              </div>
+            </div>
           </Col>
-          <Col className="gutter-row" span={8}>
-            <p>5</p>
+          <Col 
+            xs={24} 
+            sm={24} 
+            md={8} 
+            lg={8} 
+            xl={8}
+          >
+            <div class="statcard">
+              <div class="statimg">
+                <StaticImage
+                  src="../images/statfiv.svg"
+                  width={800}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="Capped Shibs"
+                  style={{ marginBottom: `1.45rem` }}
+                />
+              </div>
+              <div class="statboard">
+                <p class="statnumber">10,000.00</p>
+                <p class="statname">MARKET CAP</p>
+              </div>
+            </div>
           </Col>
         </Row>
+      </div>
+
+      <div id="features">
+
       </div>
     </section>
 
