@@ -81,7 +81,7 @@ header .calltoaction button {
 }
 button {
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    margin: 0 0.3rem 0 0 !important;
+    margin: 0.3rem 0.3rem 0.3rem 0 !important;
     box-shadow: 0.3rem 0.3rem 0.5rem #00000030;
 }
 .calltoaction button {
@@ -138,24 +138,23 @@ section {
     background-image: 
         url('../images/woofpalmleft.svg'),
         url('../images/woofpalmright.svg'),
-        url('../images/s1background.jpg')
-    ;
+        url('../images/s1background.jpg');
     background-size: 
-        32vw, 
-        36vw, 
+        32%, 
+        36%, 
         cover;
     background-position: 
-        -13% -61%, 
-        113% -151%, 
+        left -5rem top -5rem,
+        right -4.5rem top -6rem, 
         center;
     background-repeat: no-repeat;
-    padding: 14vw 5% 3vw;
+    padding: 12rem 5% 2rem;
 }
 #wgmi {
     padding: 1rem 10%
 }
 #wgmi h1 {
-    font-size: 12vw;
+    font-size: 8rem;
     text-shadow: 
         0.3rem 0 #7ec2ab, 
         0.7rem 0 #010001
