@@ -129,6 +129,13 @@ button {
 section {
     min-height:50vh;
 }
+section h2 {
+    text-align: center;
+    margin: 2rem;
+    font-size: 6vmax;
+    text-shadow: 0.2rem 0 #7ec2ab;
+    letter-spacing: 0.2rem;
+}
 
 .ant-anchor-link {
     float:left;
@@ -159,4 +166,59 @@ section {
         0.3rem 0 #7ec2ab, 
         0.7rem 0 #010001
     ;
+}
+
+#info {
+    background: #000000;
+    background: -moz-linear-gradient(top,  #000000 0%, #102417 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #000000 0%,#102417 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #000000 0%,#102417 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#102417',GradientType=0 ); /* IE6-9 */
+}
+
+#contractbox {
+    background-image: url(./../images/contract.png);
+    background-position: center;
+    text-align: center;
+    width: 80vmin;
+    margin: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 16vmin 0vmin 2vmin 1vmin;
+}
+#contractbox h5 {
+    font-size: 2vmin !important;
+    margin-bottom: 3.05vmin !important;
+}
+#contractgreen {
+    color: #099600;
+}
+
+.statcard {
+    background-color: #0000004a;
+    padding: 5% 3%;
+    border-radius: 2rem;
+    margin: 3%;
+}
+.statimg {
+    max-width: 80%;
+    margin: auto;
+}
+.statboard {
+    background-image: url(./../images/statboard.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    padding: 1.75vmax;
+}
+.statnumber {
+    font-size: 2vmax;
+    margin: 0;
+    text-shadow: 0.1vmax 0.1vmax 0.4vmax #000000ab;
+}
+.statname {
+    font-size: 1.25vmax;
+    margin: -0.5vmax 0 0 0;
+    text-shadow: 0.1vmax 0.1vmax 0.4vmax #000000ab;
 }
