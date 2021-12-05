@@ -111,7 +111,7 @@ const IndexPage = () => {
               <div class="statimg">
                 <StaticImage
                   src="../images/statone.svg"
-                  width={800}
+                  height={120}
                   quality={95}
                   formats={["auto", "webp", "avif"]}
                   alt="Value Shibs"
@@ -135,7 +135,7 @@ const IndexPage = () => {
               <div class="statimg">
                 <StaticImage
                   src="../images/stattwo.svg"
-                  width={800}
+                  height={120}
                   quality={95}
                   formats={["auto", "webp", "avif"]}
                   alt="Holder Shibs"
@@ -158,8 +158,8 @@ const IndexPage = () => {
             <div class="statcard">
               <div class="statimg">
                 <StaticImage
-                  src="../images/statthr.svg"
-                  width={800}
+                  src="../images/statfou.svg"
+                  height={120}
                   quality={95}
                   formats={["auto", "webp", "avif"]}
                   alt="Burnt Shibs"
@@ -182,8 +182,8 @@ const IndexPage = () => {
             <div class="statcard">
               <div class="statimg">
                 <StaticImage
-                  src="../images/statfou.svg"
-                  width={800}
+                  src="../images/statthr.svg"
+                  height={120}
                   quality={95}
                   formats={["auto", "webp", "avif"]}
                   alt="Circular Shibs"
@@ -207,7 +207,7 @@ const IndexPage = () => {
               <div class="statimg">
                 <StaticImage
                   src="../images/statfiv.svg"
-                  width={800}
+                  height={120}
                   quality={95}
                   formats={["auto", "webp", "avif"]}
                   alt="Capped Shibs"

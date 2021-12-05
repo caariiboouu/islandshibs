@@ -201,6 +201,9 @@ section h2 {
     margin: 3%;
 }
 .statimg {
+    text-align:center;
+}
+.statimg div {
     max-width: 80%;
     margin: auto;
 }
