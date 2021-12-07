@@ -224,7 +224,86 @@ const IndexPage = () => {
       </div>
 
       <div id="features">
-
+        <Row>
+          <Col
+            xs={24} 
+            sm={24} 
+            md={16} 
+            lg={16} 
+            xl={16}  
+          >
+            <div class="featurehead">
+              <h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div>
+              <div class="iscash">
+                <StaticImage
+                    src="../images/iscash.png"
+                    width={80}
+                    quality={95}
+                    formats={["auto", "webp", "avif"]}
+                    alt="Capped Shibs"
+                    style={{ marginBottom: `1.45rem` }}
+                  />
+              </div>
+              <div class="featurepoint">
+                <h4>Reflection</h4>
+                <p>5% is reflected to all holders for passive income</p>
+              </div>
+            </div>
+            <div>
+              <div class="iscash">
+                <StaticImage
+                    src="../images/iscash.png"
+                    width={80}
+                    quality={95}
+                    formats={["auto", "webp", "avif"]}
+                    alt="Capped Shibs"
+                    style={{ marginBottom: `1.45rem` }}
+                  />
+              </div>
+              <div class="featurepoint">
+                <h4>LP Acquisition</h4>
+                <p>5% is added to a liquidity pool</p>
+              </div>
+            </div>
+            <div>
+              <div class="iscash">
+                <StaticImage
+                    src="../images/iscash.png"
+                    width={80}
+                    quality={95}
+                    formats={["auto", "webp", "avif"]}
+                    alt="Capped Shibs"
+                    style={{ marginBottom: `1.45rem` }}
+                  />
+              </div>
+              <div class="featurepoint">
+                <h4>Burn</h4>
+                <p>A burn wallet receives a portion of the reflections to never be seen again.</p>
+              </div>
+            </div>
+          </Col>
+          <Col
+            xs={{span: 16}}
+            sm={{span: 16}}
+            md={8} 
+            lg={8} 
+            xl={8}  
+          >
+            <StaticImage
+              src="../images/featurebadge.png"
+              width={600}
+              quality={95}
+              formats={["auto", "webp", "avif"]}
+              alt="Capped Shibs"
+              style={{ marginBottom: `1.45rem` }}
+            />
+          </Col>
+        </Row>
       </div>
     </section>
 
@@ -232,8 +311,15 @@ const IndexPage = () => {
       <div id="island-map">
         <div><h2>Island Map</h2></div>
         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-          <Col className="gutter-row" span={24}>
-
+          <Col span={24}>
+            <StaticImage
+                src="../images/comingsoon.svg"
+                width={1200}
+                quality={95}
+                formats={["auto", "webp", "avif"]}
+                alt="Capped Shibs"
+                style={{ marginBottom: `1.45rem` }}
+              />
           </Col>
         </Row>
       </div>

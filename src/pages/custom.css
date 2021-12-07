@@ -127,7 +127,7 @@ button {
 }
 
 section {
-    min-height:50vh;
+    min-height: 80vh;
 }
 section h2 {
     text-align: center;
@@ -174,6 +174,12 @@ section h2 {
     background: -webkit-linear-gradient(top,  #000000 0%,#102417 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #000000 0%,#102417 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#102417',GradientType=0 ); /* IE6-9 */
+}
+
+#contract,
+#the-stats,
+#features {
+    margin: 4rem 0;
 }
 
 #contractbox {
@@ -224,4 +230,45 @@ section h2 {
     font-size: 1.25vmax;
     margin: -0.5vmax 0 0 0;
     text-shadow: 0.1vmax 0.1vmax 0.4vmax #000000ab;
+}
+
+#the-stats {
+    background-image: url(./../images/statsbackground.svg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+}
+
+#features {
+    padding: 10%;
+}
+.featurehead {
+    margin-right:1rem;
+}
+#features h3,
+#features h4 {
+    font-family: 'DM Sans Bold' !important;
+    margin:0;
+}
+.iscash {
+    float:left;
+    width: 20%;
+}
+.featurepoint {
+    float:left;
+    width:80%;
+    padding-right: 2rem;
+}
+
+#island-map {
+    min-height: 80vh;
+    background: #000000;
+    background: url(./../images/mapbackground.svg), -moz-linear-gradient(top,  #000000 0%, #4C7E54 100%); /* FF3.6-15 */
+    background: url(./../images/mapbackground.svg), -webkit-linear-gradient(top,  #000000 0%,#4C7E54 100%); /* Chrome10-25,Safari5.1-6 */
+    background: url(./../images/mapbackground.svg), linear-gradient(to bottom,  #000000 0%,#4C7E54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#4C7E54',GradientType=0 ); /* IE6-9 */
+    background-position: bottom -5rem right -6rem, center;
+    background-repeat: no-repeat;
+    background-size: 115%;
+    
 }
