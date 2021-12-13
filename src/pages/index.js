@@ -11,7 +11,6 @@ import {
   Row, 
   Col,
   Modal, 
-  Button,
 } from 'antd';
 
 const IndexPage = () => {
@@ -61,7 +60,7 @@ const IndexPage = () => {
               </p>
               <Row>
                 <Col>
-                  <a class="calltoaction"><button>How To Buy</button></a>
+                  <a href="#howtobuy" class="calltoaction"><button>How To Buy</button></a>
                 </Col>
                 <Col>
                   <a class="passiveaction"><button>Read</button></a>
