@@ -127,11 +127,11 @@ button {
 }
 
 section {
-    min-height: 80vh;
+    min-height: 70vw;
 }
 section h2 {
     text-align: center;
-    margin: 2rem;
+    padding: 3rem 3% 0;
     font-size: 6vmax;
     text-shadow: 0.2rem 0 #7ec2ab;
     letter-spacing: 0.2rem;
@@ -235,7 +235,7 @@ section h2 {
 #the-stats {
     background-image: url(./../images/statsbackground.svg);
     background-repeat: no-repeat;
-    background-size: 120%;
+    background-size: 127%;
     background-position: center;
 }
 
@@ -253,6 +253,7 @@ section h2 {
 .iscash {
     float:left;
     width: 20%;
+    padding-right: 3%;
 }
 .featurepoint {
     float:left;
@@ -261,14 +262,51 @@ section h2 {
 }
 
 #island-map {
-    min-height: 80vh;
     background: #000000;
     background: url(./../images/mapbackground.svg), -moz-linear-gradient(top,  #000000 0%, #4C7E54 100%); /* FF3.6-15 */
     background: url(./../images/mapbackground.svg), -webkit-linear-gradient(top,  #000000 0%,#4C7E54 100%); /* Chrome10-25,Safari5.1-6 */
     background: url(./../images/mapbackground.svg), linear-gradient(to bottom,  #000000 0%,#4C7E54 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#4C7E54',GradientType=0 ); /* IE6-9 */
-    background-position: bottom -5rem right -6rem, center;
+    background-position: bottom 57% right 44%, center;
     background-repeat: no-repeat;
-    background-size: 115%;
-    
+    background-size: 131%;
+}
+
+#how-to-buy {
+    min-height: 70vw;
+    background: #000000;
+    background: url(./../images/buybackground.svg); /* FF3.6-15 */
+    background-position: bottom -11vw center;
+    background-repeat: no-repeat;
+    background-size: 137%;
+}
+
+.htbpanel {
+    margin-top: 5%;
+    padding:3%;
+}
+
+#precommunity {
+    min-height: 60vw;
+    background: #000000;
+    background: url(./../images/community.svg); /* FF3.6-15 */
+    background-position: bottom -11vw center;
+    background-repeat: no-repeat;
+    background-size: 131%;
+}
+
+#community {
+    background: #082D1B;
+}
+
+#community .subheader {
+    text-align: center;
+    margin: 0 5rem .5rem;
+}
+
+footer p {
+    text-align: center;
+    padding: 2rem 3%;
+    opacity: 0.6;
+    font-size: 0.7rem;
 }

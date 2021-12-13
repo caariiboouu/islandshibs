@@ -89,7 +89,7 @@ const IndexPage = () => {
       <div id="contract">
         <div><h2>Contract</h2></div>
         <Row>
-          <Col className="gutter-row" span={24}>
+          <Col span={24}>
             <div id="contractbox">
               <h5><span id="contractgreen">CA:</span> 1xfe6567ee89ad114833c05dd22c9597baca8aa540</h5>
             </div>
@@ -288,11 +288,11 @@ const IndexPage = () => {
             </div>
           </Col>
           <Col
-            xs={{span: 16}}
-            sm={{span: 16}}
-            md={8} 
-            lg={8} 
-            xl={8}  
+            xs={{span: 16, offset: 4}}
+            sm={{span: 16, offset: 4}}
+            md={{span: 8, offset: 0}} 
+            lg={{span: 8, offset: 0}} 
+            xl={{span: 8, offset: 0}}  
           >
             <StaticImage
               src="../images/featurebadge.png"
@@ -310,7 +310,7 @@ const IndexPage = () => {
     <section>
       <div id="island-map">
         <div><h2>Island Map</h2></div>
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
+        <Row>
           <Col span={24}>
             <StaticImage
                 src="../images/comingsoon.svg"
@@ -328,20 +328,25 @@ const IndexPage = () => {
     <section>
       <div id="how-to-buy">
         <div><h2>How To Buy</h2></div>
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-          <Col className="gutter-row" span={12}>
-            <div>
-            <StaticImage
-                src="../images/shibs.svg"
-                width={600}
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                alt="Island Shib Brothers"
-                style={{ marginBottom: `1.45rem` }}
-              />
-                <Button type="primary" onClick={show1Modal}>
-                  Open Modal
-                </Button>
+        <Row>
+          <Col
+            xs={{span: 10, offset: 2}}
+            sm={{span: 10, offset: 2}}
+            md={{span: 10, offset: 2}}
+            lg={{span: 10, offset: 2}}
+            xl={{span: 10, offset: 2}}
+          >
+            <div class="htbpanel">
+                <a type="primary" onClick={show1Modal}>
+                  <StaticImage
+                  src="../images/htbmm.png"
+                  width={600}
+                  quality={95}
+                  formats={["auto", "webp", "avif"]}
+                  alt="How to Buy with Metamask"
+                  style={{ marginBottom: `1.45rem` }}
+                />
+                </a>
                 <Modal title="Basic Modal 1" visible={isModal1Visible} onOk={handle1Ok} onCancel={handle1Cancel}>
                   <p>Some contents...</p>
                   <p>Some contents...</p>
@@ -349,19 +354,18 @@ const IndexPage = () => {
                 </Modal>
             </div>
           </Col>
-          <Col className="gutter-row" span={12}>
-            <div>
-              <StaticImage
-                src="../images/shibs.svg"
-                width={600}
-                quality={95}
-                formats={["auto", "webp", "avif"]}
-                alt="Island Shib Brothers"
-                style={{ marginBottom: `1.45rem` }}
-              />
-                <Button type="primary" onClick={show2Modal}>
-                  Open Modal
-                </Button>
+          <Col span={10}>
+            <div class="htbpanel">
+                <a type="primary" onClick={show2Modal}>
+                  <StaticImage
+                    src="../images/htbtw.png"
+                    width={600}
+                    quality={95}
+                    formats={["auto", "webp", "avif"]}
+                    alt="How to Buy with Trust Wallet"
+                    style={{ marginBottom: `1.45rem` }}
+                  />
+                </a>
                 <Modal title="Basic Modal 2" visible={isModal2Visible} onOk={handle2Ok} onCancel={handle2Cancel}>
                   <p>Some contents...</p>
                   <p>Some contents...</p>
@@ -375,11 +379,37 @@ const IndexPage = () => {
     </section>
 
     <section>
-      <div id="community">
-        <div><h2>Community</h2></div>
-        <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-          <Col className="gutter-row" span={24}>
+      <div id="precommunity">
+        <Row>
+          <Col span={24}>
 
+          </Col>
+        </Row>
+      </div>
+    </section>
+    <section>
+      <div id="community">
+        <div>
+          <h2>Community</h2>
+          <p class="subheader">Join our social platforms to get updates using the links below.</p>
+        </div>
+
+        <Row>
+          <Col 
+            xs={{ span: 10, offset: 7 }}
+            sm={{ span: 10, offset: 7 }}
+            md={{ span: 10, offset: 7 }}
+            lg={{ span: 10, offset: 7 }}
+            xl={{ span: 10, offset: 7 }}
+          >
+          <StaticImage
+            src="../images/commlinks.png"
+            width={800}
+            quality={100}
+            formats={["auto", "webp", "avif"]}
+            alt="How to Buy with Trust Wallet"
+            style={{ marginBottom: `1.45rem` }}
+          />
           </Col>
         </Row>
       </div>
