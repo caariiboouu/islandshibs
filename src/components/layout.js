@@ -39,6 +39,7 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
+          <p>© Copyright 2021 &nbsp;&nbsp;&nbsp;&nbsp;All Rights Reserved</p>
         </footer>
       </div>
     </>
